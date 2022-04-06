@@ -729,17 +729,35 @@ body {
 }
 .arbol__btn{
     background-color:#ade3aa;
-    width: 100px;
-    height: 30px;
+    border-radius: 3px;
+    width: 110px;
+    height: 35px;
     text-align: center;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 8px;
     margin-top: auto;
     margin-left: auto;
+    position: relative;
+    box-shadow: 0.5px 3px 8px gray;
+}
+.arbol__btn::after{
+    content: " »";
+    position: absolute;
+    right: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 .arbol__btn:hover{
     background-color: #cfd271;
     cursor: pointer;
+    width: 115px;
+    padding-left: 4px;
+    
+}
+.arbol__btn:hover:after{
+    right: 10px;
+    opacity: 1;
 }
 
 /* SUMARSE: Formulario */
