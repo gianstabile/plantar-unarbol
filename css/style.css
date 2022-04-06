@@ -283,7 +283,7 @@ body {
 }
 .breadcrumb a:hover{
     color:whitesmoke;
-      transition: all 0.5s;
+      transition: all 0.2s;
 }
 .breadcrumb li+li:before {
     padding: 20px;
