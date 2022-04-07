@@ -344,6 +344,14 @@ body {
     letter-spacing: 5px;
     font-size: 20px;
 }
+.section__title::before{
+    content: "# ";
+    color: green;
+    opacity: 0;
+}
+.section__title:hover::before{
+    opacity:1;
+}
 .section__subtitle{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -1210,7 +1218,7 @@ body {
     }
     #label .label__title{
         padding: 5% 8%;
-        padding-left: 28%;
+        padding-left: 38%;
     }
     #footer{
         width: 100%;
