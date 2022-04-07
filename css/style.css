@@ -1249,8 +1249,9 @@ body {
         border-radius: 0;
     }
     #label .label__title{
-        padding: 5% 8%;
-        padding-left: 30%;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
     }
     #footer{
         width: 100%;
