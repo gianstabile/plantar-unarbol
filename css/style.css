@@ -562,11 +562,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
     border-radius: 20px;
     outline: 1px solid #444;
     background-color: rgba(238, 246, 238, .8);
     width: 40%;
-    padding: 5%;
+    padding: 3%;
 }
 .donate__box h2{
     padding: 10px;
@@ -598,20 +599,23 @@ body {
     outline: 1px solid lightblue;
     background-color: whitesmoke;
 }
-.donate__box button{
-    width: 30%;
+.donate__box a{
+    display: inline-block;
+    width: 25%;
     height: 50px;
     border-radius: 5px;
     border:0;
     outline: 1px solid gray;
-    margin: 10px 0;
+    margin: 20px auto;
     font-size: 18px;
     text-transform: uppercase;
     color: #444;
+    font-size: 20px;
 }
-.donate__box button:hover{
-    background-color: whitesmoke;
+.donate__box a:hover{
+    width: 26%;
 }
+
 
 
 /* RAIZ: Team */
@@ -738,7 +742,7 @@ body {
 .arbol__btn{
     background-color:#ade3aa;
     border-radius: 3px;
-    width: 110px;
+    width: 120px;
     height: 35px;
     text-align: center;
     text-transform: uppercase;
@@ -749,8 +753,11 @@ body {
     box-shadow: 0.5px 3px 8px gray;
 }
 .arbol__btn::after{
-    content: " »";
+    content: " >";
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
+    top:4px;
     right: 15px;
     opacity: 0;
     cursor: pointer;
@@ -759,7 +766,7 @@ body {
 .arbol__btn:hover{
     background-color: #cfd271;
     cursor: pointer;
-    width: 115px;
+    width: 135px;
     padding-left: 4px;
     
 }
@@ -833,6 +840,10 @@ body {
     color: #444;
     font-size: 14px;
 }
+.form__items a{
+  display: block;
+  margin-left: auto;
+}
 #form .form__itembox{
     width: 300px;
     height: 60px;
@@ -845,23 +856,44 @@ body {
     gap: 30px;
 }
 .form__btn{
-    margin-left: auto;
-}
-.form__btn button{
-    width: 100%;
-    height: 50px;
-    padding: 5px 20px;
-    border-radius: 5px;
-    border:0;
-    outline: 1px solid gray;
-    margin: 10px 0;
-    font-size: 15px;
+    background-color:#ade3aa;
+    border-radius: 3px;
+    color:#444;
+    width: 115px;
+    height: 40px;
+    text-align: center;
     text-transform: uppercase;
-    color: #444;
+    padding: 12px;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    box-shadow: 0.5px 3px 8px gray;
+    }
+.form__btn:hover{
+    color:#444;
+    padding-left: 30px;
 }
-.form__btn button:hover{
-    background-color: whitesmoke;
-}
+.form__btn::before{
+        content: "+ ";
+        font-size: 20px;
+        padding: 5px;
+        position: absolute;
+        top: 10%;
+        left: 22%;
+        opacity: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+.form__btn:hover{
+        background-color: #cfd271;
+        color:#444;
+        cursor: pointer;
+        width: 130px;    
+    }
+.form__btn:hover:before{
+        left: 10%;
+        opacity: 1;
+    }
 
 
 /*  FOOTER */
