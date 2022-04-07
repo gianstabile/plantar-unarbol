@@ -1210,6 +1210,7 @@ body {
     }
     #label .label__title{
         padding: 5% 8%;
+        padding-left: 28%;
     }
     #footer{
         width: 100%;
