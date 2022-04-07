@@ -601,7 +601,7 @@ body {
 }
 .donate__box a{
     display: inline-block;
-    width: 25%;
+    width: 130px;
     height: 50px;
     border-radius: 5px;
     border:0;
@@ -613,7 +613,7 @@ body {
     font-size: 20px;
 }
 .donate__box a:hover{
-    width: 26%;
+    width: 150px;
 }
 
 
@@ -1134,7 +1134,7 @@ body {
         gap:50px;
     }
     .arbol__card{
-        width: 85%;
+        width: 90%;
     }
     .arbol__img img{
         width: 100%;
@@ -1223,7 +1223,7 @@ body {
     }
 }
 @media screen and (max-width: 480px) {
-      .header__social{
+    .header__social{
         display:none;
     }
     .main__actionbtn{
