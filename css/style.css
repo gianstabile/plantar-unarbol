@@ -807,6 +807,24 @@ a {
     opacity: 1;
 }
 
+
+/* BOTÓN SCROLL UP */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 3%;
+    height: 4%;
+    display: none;
+    outline: 1px solid #999;
+    }
+#btn-back-to-top:hover{
+    background-color:#ade3aa;
+}
+
+
+
+
 /* SUMARSE: Formulario */
 .center__title{
     text-align: center;
