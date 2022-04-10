@@ -690,13 +690,13 @@ a {
 }
 .team__people-title{
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 20px;
     padding: 20px 0;
     text-align: center;
 }
 
 .team__people-p{
-    font-size: 18px;
+    font-size: 17px;
     padding: 10px 0;
     text-align: justify;
 }
