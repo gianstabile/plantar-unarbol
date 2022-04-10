@@ -134,15 +134,46 @@ AOS.init();
 
         <section id="section" class="border__section" data-aos="zoom-in">
             <div class="section__container card__top">
+                
                 <h2 class="section__title">Tutoriales</h2>
-                <h4 class="section__subtitle">Cómo plantar un árbol?</h4>
-                <iframe width="100%" height="713" src="https://www.youtube.com/embed/kY61VsrF4Cw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section id="section" class="border__section" data-aos="zoom-in">
-            <div class="section__container card__top">
-                <h4 class="section__subtitle--right">Recomendaciones técnicas previas</h4>
-                <iframe width="100%" height="713" src="https://www.youtube.com/embed/Rb2PkrwBHVg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Cómo plantar un árbol?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <iframe width="100%" height="713" src="https://www.youtube.com/embed/kY61VsrF4Cw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Recomendaciones técnicas previas
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <iframe width="100%" height="713" src="https://www.youtube.com/embed/Rb2PkrwBHVg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Cuidado de árboles frutales
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <iframe width="100%" height="713" src="https://www.youtube.com/embed/cq_79rEVW3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                </div>            
             </div>
         </section>
 
@@ -220,6 +251,6 @@ AOS.init();
         <p><a href="#">Plantar un árbol</a> es un desarrollo de <span>Gianni Stabile</span>. © 2022 Todos los derechos reservados.</p>
     </div>
 </div>
-<script src="../js/bootstrap.bundle.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
