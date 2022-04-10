@@ -11,7 +11,10 @@
 
 body {
     background: radial-gradient(white,#eef6ee);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Open Sans', sans-serif; 
+}
+a {
+    text-decoration: none;
 }
 
 /*  GRID Layout */
@@ -253,8 +256,9 @@ body {
 #label .label__title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 22px;
+    font-weight: 600;
     padding-left: 8%;
     position: absolute;
     top: 33%;
@@ -341,7 +345,7 @@ body {
 .section__title{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2.5px;
     font-size: 20px;
 }
 .section__title::before{
@@ -389,6 +393,45 @@ body {
     box-shadow: 6px 10px 5px lightgray;
     outline:0.5px solid lightgrey;
 }
+.section__btn{
+    background-color:#ade3aa;
+    border-radius: 3px;
+    color:#444;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px;
+    margin: 15px auto;
+    position: relative;
+    box-shadow: 0.5px 3px 8px gray;
+    }
+.section__btn:hover{
+    color:#444;
+    padding-left: 30px;
+}
+.section__btn::before{
+        content: "+ ";
+        font-size: 20px;
+        padding: 5px;
+        position: absolute;
+        top: 1%;
+        left: 22%;
+        opacity: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+.section__btn:hover{
+        background-color: #cfd271;
+        color:#444;
+        cursor: pointer;
+        width: 130px;    
+    }
+.section__btn:hover:before{
+        left: 10%;
+        opacity: 1;
+    }
 
 #ancla a{       
     display: block;       
@@ -571,6 +614,7 @@ body {
 }
 .donate__box h2{
     padding: 10px;
+    margin-top: 10px;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -586,7 +630,8 @@ body {
 .donate__box input{
     height: 60px;
     margin: 5px 0;
-    font-family: 'Open Sans', sans-serif;    text-align: center;
+    font-family: 'Open Sans', sans-serif;    
+    text-align: center;
     border-radius:  5px;
     outline: 1px solid gray;
     border:0;
@@ -599,22 +644,7 @@ body {
     outline: 1px solid lightblue;
     background-color: whitesmoke;
 }
-.donate__box a{
-    display: inline-block;
-    width: 130px;
-    height: 50px;
-    border-radius: 5px;
-    border:0;
-    outline: 1px solid gray;
-    margin: 20px auto;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #444;
-    font-size: 20px;
-}
-.donate__box a:hover{
-    width: 150px;
-}
+
 
 
 
@@ -634,6 +664,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     gap:50px;
 }
 .team__people{
@@ -664,8 +695,7 @@ body {
 }
 
 .team__people-p{
-    font-size: 20px;
-    opacity: 0.8;
+    font-size: 18px;
     padding: 10px 0;
     text-align: justify;
 }
@@ -742,11 +772,12 @@ body {
 .arbol__btn{
     background-color:#ade3aa;
     border-radius: 3px;
+    font-size: 15px;
     width: 120px;
     height: 35px;
     text-align: center;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 7px;
     margin-top: auto;
     margin-left: auto;
     position: relative;
@@ -757,7 +788,7 @@ body {
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
-    top:4px;
+    top:2px;
     right: 15px;
     opacity: 0;
     cursor: pointer;
@@ -863,7 +894,8 @@ body {
     height: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding: 12px;
+    font-size: 14px;
+    padding: 10px;
     margin-top: auto;
     margin-left: auto;
     position: relative;
@@ -878,7 +910,7 @@ body {
         font-size: 20px;
         padding: 5px;
         position: absolute;
-        top: 10%;
+        top: 1%;
         left: 22%;
         opacity: 0;
         cursor: pointer;
@@ -1024,11 +1056,25 @@ body {
     margin: 5px auto;
     width: 100%;
     height: 30px;
+    font-size: 13px;
     text-align: center;
     grid-column: 1/4;
 }
+.copyright a{
+    color:green;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+}
+.copyright a:hover{
+    color:forestgreen;
+    transition: all 0.5s;
+    text-decoration-thickness: 15%;
+    text-decoration-line:underline;
+    text-underline-offset: 10px;
+}
 .copyright span{
-    color:orangered;
+    color:#333;
     font-weight: 600;
     cursor: pointer;
 }
@@ -1239,7 +1285,12 @@ body {
     #section{
         width: 100%;
     }
-    
+    .donate__box h2{
+        margin-top: 30px;
+    }
+    .section__btn{
+        margin-bottom: 25px;
+    }
     #stats{
         width: 100%;
     }
