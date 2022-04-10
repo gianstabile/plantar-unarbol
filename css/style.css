@@ -1095,7 +1095,7 @@ a {
     }
     .main__actionbtn{
         display: flex;
-        top:20%;
+        top:25%;
         left: 0;
         /* margin:60% 30%; */
         position:none;
@@ -1273,7 +1273,7 @@ a {
     }
     .main__actionbtn{
         display: flex;
-        left: 5%;
+        left: 2%;
         top:30%;
         position:none;
         width: 100%;
