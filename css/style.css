@@ -228,7 +228,7 @@ a {
     cursor: pointer;
 }
 .main__actionbtn a.button:hover{
-    background-color: lightgoldenrodyellow;
+    background-color:#ade3aa;
     color: #444;
     margin: 20px auto;
     width: 15%;
