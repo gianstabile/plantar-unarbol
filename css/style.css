@@ -374,7 +374,7 @@ a {
 }
 .section__info .section__p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 35px;
     margin-top: 10px;
     text-align: justify;
@@ -1287,6 +1287,9 @@ a {
     #section{
         width: 100%;
     }
+    .section__p{
+        font-size: 1em;
+    }
     .donate__box h2{
         margin-top: 30px;
     }
@@ -1309,10 +1312,12 @@ a {
         width: 100%;
         text-align: center;
     }
+    .form__item{
+        width: 100%;
+    }
     #footer{
         width: 100%;
     }
-    
     .footer__menu{
         padding:0;
         margin: 0;
