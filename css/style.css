@@ -347,6 +347,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-size: 20px;
+    cursor:pointer;
 }
 .section__title::before{
     content: "# ";
@@ -718,7 +719,7 @@ a {
     top: 1250px;
 }
 .line--sumarse {
-    top: 1200px;
+    top: 1050px;
 }
 
 
@@ -815,9 +816,9 @@ a {
     width:50%;
 }
 #section__form{
-    width: 55%;
-    margin: 60px auto; 
-    padding-top:30px;
+    width: 60%;
+    margin: 80px auto; 
+    padding-top:20px;
 }
 #form{
     display: flex;
@@ -826,6 +827,7 @@ a {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
+    margin: 10px auto;
     font-family: sans-serif;
 }
 .form__container{
@@ -836,55 +838,16 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    gap: 30px;
+    gap: 50px;
 }
 .form__item{
     display: flex;
     flex-direction: column;
-}
-.form__item input{
-    font-size: 20px;
-    color: #9999;
-    padding: 15px;
-}
-.form__item input:focus{
-    outline: 1px solid limegreen;
-    border: 0;
-}
-.form__item textarea{
-    width: 100%;
-    height: 250px;
-    font-size: 20px;
-    color: #9999;
-    padding: 15px;
-}
-.form__item textarea:focus{
-    outline: 1px solid limegreen;
-    border: 0;
-}
-.form__item label{
-    margin: 10px 0;;
-    padding: 10px 0;
-}
-.form__item p{
-    padding: 7px 0;
-    color: #444;
-    font-size: 14px;
+    width: 350px;
 }
 .form__items a{
   display: block;
   margin-left: auto;
-}
-#form .form__itembox{
-    width: 300px;
-    height: 60px;
-}
-#form .form__itemradio{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
 }
 .form__btn{
     background-color:#ade3aa;
@@ -933,7 +896,7 @@ a {
     grid-area: footer;
     width: 80%;
     height: auto;
-    margin: 50px auto 20px auto;
+    margin: 40px auto 20px auto;
     background-color:whitesmoke;
 }
 .footer__container{

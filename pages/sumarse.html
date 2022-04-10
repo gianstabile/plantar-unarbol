@@ -144,23 +144,29 @@
                         <h4 class="section__subtitle">Información personal:</h4>
                         <form action="">
                             <div class="form__items">
-                                <div class="form__item">
-                                    <label for="nombre" class="form__items__label">*Nombre y Apellido</label>
-                                    <input class="form__itembox" type="text" id="nombre" name="nombre_de_usuario" value="Juan" onfocus="this.value=''">
+                                <div class="form__item"><div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre y apellido">
+                                    <label for="floatingInput">Nombre y apellido</label>
+                                  </div>
                                 </div>
                                 <div class="form__item">
-                                    <label for="email" class="form__items__label">*E-mail</label>
-                                    <input class="form__itembox" type="email" id="email" name="email" value="juan@mail.com" onfocus="this.value=''">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="nombreejemplo.com">
+                                        <label for="floatingInput">Dirección de email</label>
+                                    </div>
                                 </div>
                                 <div class="form__item">
-                                    <label for="tel" class="form__items__label">Celular:</label>
-                                    <input class="form__itembox" type="tel" id="celular" name="numero_de_celular" value="+54 9 11 xxxx xxxx" onfocus="this.value=''">
-                                    <p>*sin el 0 ni el 15.</p>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Celular">
+                                        <label for="floatingPassword">Celular <small>(sin el 0 ni el 15)</small></label>
+                                    </div>
                                 </div>
                                 <div class="form__item">
-                                    <label for="ciudad" class="form__items__label">Ciudad</label>
-                                    <input class="form__itembox" type="text" id="ciudad" name="ciudad" value="Buenos Aires" onfocus="this.value=''">
-                                </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Ciudad">
+                                        <label for="floatingPassword">Ciudad</label>
+                                    </div>
+                                </div>    
                             </div>
                         </form>
                     </div>
@@ -169,32 +175,23 @@
                         <form action="">
                             <div class="form__items">
                                 <div class="form__item">
-                                    <div class="form__item">
-
-                                        <label for="intereses" class="form__items__label">Cómo nos conociste?</label>
-                                        <div class="form__itemradio">
-                                            <div>
-                                                <input type="radio" id="internet" name="descubrimiento" value="Internet">
-                                                <label for="internet">Internet</label>
-                                            </div>
-                                            <div>
-                                                <input type="radio" id="redes_sociales" name="descubrimiento" value="Redes Sociales">
-                                                <label for="redes">Redes sociales</label>
-                                            </div>
-                                            <div>
-                                                <input type="radio" id="amigo" name="descubrimiento" value="A través de un amigo">
-                                                <label for="redes">A través de un amigo</label>
-                                            </div>
-                                            <div>
-                                                <input type="radio" id="otros_medios" name="descubrimiento" value="Otros medios">
-                                                <label for="redes">Otros medios</label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                          <option selected>Selecciona una</option>
+                                          <option value="1">Internet</option>
+                                          <option value="2">Redes sociales</option>
+                                          <option value="2">Prensa o TV</option>
+                                          <option value="3">Por un amigo</option>
+                                          <option value="3">Otros medios</option>
+                                        </select>
+                                        <label for="floatingSelect">Cómo nos encontraste?</label>
+                                      </div>
                                 </div>
                                 <div class="form__item">
-                                    <label for="mensaje" class="form__items__label">Por qué te interesa sumarte?</label>
-                                    <textarea name="mensaje_usuario" id="mensaje" cols="30" rows="10"onfocus="this.value=''">Me interesa sumarme porque...</textarea>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Deja tu mensaje aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Por qué te interesa sumarte?</label>
+                                      </div>
                                 </div>
                                 <a href="#"><div class="form__btn">Sumarse</div></a>
                             </div>
