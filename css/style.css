@@ -815,8 +815,8 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 3%;
-    height: 4%;
+    width: 55px;
+    height: 30px;
     display: none;
     outline: 1px solid #999;
     }
@@ -841,17 +841,21 @@ a {
     padding-top:20px;
 }
 #form{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     gap:50px;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    margin: 10px auto;
+    align-items: flex-start; */
+    /* padding: 20px; */
+    margin: 0 auto;
     font-family: sans-serif;
 }
 .form__container{
    margin: 30px auto;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 .form__items{
     display: flex;
@@ -945,15 +949,16 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-height: 320px;
     overflow-y: hidden;  
+    margin-left: 15px;
+    margin-right: 5px;
 }
 .footer__info{
     display: flex;
     width: 100%;
     gap: 20px;
     margin-top: 30px;
-    padding: 20px 20px;
+    padding: 20px 6px;
 }
 .footer__info img{
     width: 100px;
@@ -964,6 +969,7 @@ a {
     text-align: justify;
     line-height: 1.4;
     font-size: 17px;
+    font-weight: 600;
     margin-bottom: 4%;
 }
 .footer__p{
@@ -974,13 +980,19 @@ a {
 }
 .footer__menu{
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-.footer__container .footer__menu ul{
+.footer__menu ul{
     display: flex;
-    width: 80%;
     justify-content:space-between;
+    align-items: center;
+    flex-wrap:wrap;
     list-style: none;
+    width: 80%;
+    padding: 0;
+    /* margin-left: 10%; */
 }
 .footer__menu ul li{
     text-transform: uppercase;
@@ -1005,13 +1017,13 @@ a {
     justify-content: space-between;
     width: 100%;
     gap:10px;
-    height: 320px;
+    height: auto;
     padding: 50px 20px;
     overflow-y: hidden;
 }
 .footer__info--2{
-    padding: 0 20px;
-    width: 70%;
+    padding: 0 6px;
+    width: 80%;
 }
 .footer__map{
     width: 50%;
@@ -1111,8 +1123,6 @@ a {
         width: 97%;
     }
     #label h1{
-        /* margin-top:auto; */
-        /* margin-bottom: auto; */
         padding: 3% 8%;
     }
     .section__container{
@@ -1160,6 +1170,9 @@ a {
         flex-direction: column;
         justify-content: start;
         align-items: flex-start;
+    }
+    .form__items a{
+        margin: 0 auto;
     }
     .right__content{
         display: flex;
@@ -1236,9 +1249,11 @@ a {
     .footer__info{
         flex-direction: column;
         align-items: center;
+        padding: 0 25px;
     }
     .footer__info--2{
         width: 100%;
+        padding: 0 25px;
     }
     .footer__title,
     .footer__p{
@@ -1247,9 +1262,12 @@ a {
     .footer__menu{
         padding:0;
         margin: 0;
-        width: 100%;
+        width: 80%;
         justify-content: center;
-
+    }
+    .footer__menu ul{
+        margin:0;
+        padding: 0;
     }
     .footer__menu ul li{
         padding: 0;
@@ -1299,6 +1317,10 @@ a {
     .section__btn:hover:before{
         left: 30%;
     }
+    #form{
+        padding: 0;
+        margin: 0;
+    }
     #stats{
         width: 100%;
     }
@@ -1311,6 +1333,9 @@ a {
         font-size: 25px;
         width: 100%;
         text-align: center;
+    }
+    #label h1{
+        padding: 8% 8%;
     }
     .form__item{
         width: 100%;
