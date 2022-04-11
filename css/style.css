@@ -259,11 +259,11 @@ a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
     letter-spacing: 4px;
-    font-size: 22px;
+    font-size: 27px;
     font-weight: 600;
     padding-left: 8%;
     position: absolute;
-    top: 33%;
+    top: 45%;
 }
 
 
@@ -1123,7 +1123,7 @@ a {
         width: 97%;
     }
     #label h1{
-        padding: 3% 8%;
+        padding: 0% 8%;
     }
     .section__container{
         flex-direction: column;
@@ -1333,9 +1333,6 @@ a {
         font-size: 25px;
         width: 100%;
         text-align: center;
-    }
-    #label h1{
-        padding: 8% 8%;
     }
     .form__item{
         width: 100%;
