@@ -927,6 +927,14 @@ a {
 .img__cover{
     object-fit: cover;
 }
+.form-control:focus{
+    border: 3px solid #ade3aa;
+    box-shadow: none;
+}
+.form-select:focus{
+    border: 3px solid #ade3aa;
+    box-shadow: none;
+}
 
 
 /*  FOOTER */
