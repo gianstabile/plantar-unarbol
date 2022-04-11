@@ -52,10 +52,11 @@ a {
 }
 .header__logo img{
     width:auto;
-    max-height: 100px;
+    max-height: 80px;
 }
 .header__logo h2{
     padding: 15px;
+    margin-top: 10px;
     font-size: 20px;
     font-family: 'Fredoka', sans-serif;
     color:darkgreen;
@@ -1112,6 +1113,9 @@ a {
     }
     .header__social{
         justify-content: center;
+    }
+    .header__logo{
+        margin-top: 2%;
     }
     .main__actionbtn{
         display: flex;
