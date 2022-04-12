@@ -700,8 +700,9 @@ a {
 }
 
 .team__people-p{
-    font-size: 17px;
+    font-size: 1em;
     padding: 10px 0;
+    line-height: 1.5;
     text-align: justify;
 }
 .separator {
@@ -1151,6 +1152,9 @@ a {
         width: 100%;
         padding:5px;
         text-align: center;
+    }
+    .section__p{
+        font-size: 1em;
     }
     .section__gallery{
         height: auto;
