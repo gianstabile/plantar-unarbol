@@ -378,7 +378,7 @@ a {
 }
 .section__p{
     font-family: 'Open Sans', sans-serif;  
-    font-size: 1.2em;
+    font-size: 1.1rem;
     line-height: 2;
     margin-top: 10px;
     text-align: justify;
@@ -702,7 +702,7 @@ a {
 }
 
 .team__people-p{
-    font-size: 1.2em;
+    font-size: 1.1rem;
     padding: 10px 0;
     line-height: 2;
     text-align: justify;
@@ -983,7 +983,7 @@ a {
     font-family: sans-serif;
     text-align: justify;
     line-height: 1.4;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 4%;
 }
@@ -991,7 +991,7 @@ a {
     font-family: sans-serif;
     text-align: justify;
     line-height: 1.4;
-    font-size: 17px;
+    font-size: 1rem;
 }
 .footer__menu{
     display: flex;
