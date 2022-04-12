@@ -376,10 +376,10 @@ a {
     color: inherit;
     padding: 15px 0;
 }
-.section__info .section__p{
+.section__p{
     font-family: 'Open Sans', sans-serif;  
     font-size: 1.2em;
-    line-height: 35px;
+    line-height: 2;
     margin-top: 10px;
     text-align: justify;
 }
@@ -702,9 +702,9 @@ a {
 }
 
 .team__people-p{
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 10px 0;
-    line-height: 1.5;
+    line-height: 2;
     text-align: justify;
 }
 .separator {
@@ -893,10 +893,6 @@ a {
     position: relative;
     box-shadow: 0.5px 3px 8px gray;
     }
-.form__btn:hover{
-    color:#444;
-    padding-left: 30px;
-}
 .form__btn::before{
         content: "+ ";
         font-size: 20px;
@@ -909,14 +905,17 @@ a {
         transition: all 0.3s;
     }
 .form__btn:hover{
-        background-color: #cfd271;
-        color:#444;
-        cursor: pointer;
-        width: 130px;    
-    }
+    color:#444;
+    padding-left: 30px;
+    background-color: #cfd271;
+    color:#444;
+    cursor: pointer;
+    width: 130px; 
+}
 .form__btn:hover:before{
         left: 10%;
         opacity: 1;
+       
     }
 
 
@@ -1155,10 +1154,6 @@ a {
         padding:5px;
         text-align: center;
     }
-    .section__p{
-        font-size: 0.75em;
-        line-height: 25px;
-    }
     .section__gallery{
         height: auto;
         display: flex;
@@ -1326,9 +1321,6 @@ a {
     }
     #section{
         width: 100%;
-    }
-    .section__p{
-        font-size: 0.75em;
     }
     .donate__box h2{
         margin-top: 30px;
