@@ -266,7 +266,9 @@ a {
     padding-left: 8%;
     position: absolute;
     top: 45%;
+    text-shadow: 6px 5px 5px #444;
 }
+
 
 
 /* BREADCRUMB */
@@ -965,15 +967,14 @@ a {
     flex-direction: column;
     width: 100%;
     overflow-y: hidden;  
-    margin-left: 15px;
-    margin-right: 5px;
+    margin-left: 20px;
+    padding: 50px 20px;
+    gap:15px;
 }
 .footer__info{
     display: flex;
     width: 100%;
     gap: 20px;
-    margin-top: 30px;
-    padding: 20px 6px;
 }
 .footer__info img{
     width: 100px;
@@ -990,7 +991,7 @@ a {
 .footer__p{
     font-family: sans-serif;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.5;
     font-size: 1rem;
 }
 .footer__menu{
@@ -1031,17 +1032,16 @@ a {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap:10px;
+    gap:30px;
     height: auto;
     padding: 50px 20px;
     overflow-y: hidden;
 }
 .footer__info--2{
-    padding: 0 6px;
-    width: 80%;
+    width: 70%;
 }
 .footer__map{
-    width: 50%;
+    width: 70%;
 }
 
 
@@ -1064,9 +1064,12 @@ a {
     flex-wrap: wrap;
     padding: 0;
     margin: 0 auto;
+    gap:15px;
 }
 .footer__logos img{
     width: 20%;
+    min-width: 80px;
+    max-width: 110px;
     height: auto;
     cursor:pointer;
     margin: 0 12px;
@@ -1248,7 +1251,7 @@ a {
         justify-content: space-between;
         align-content: center;
         height: auto;
-        gap: 5px;
+        gap: 10px;
     }
     .footer__1,
     .footer__2,
@@ -1256,15 +1259,11 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         width: 100%;
         height: auto;
-        padding: 10px 5px;
-        margin: 10px 0;
-    }
-    .footer__1{
-        max-height: 600px;
-        margin: 0 auto;
+        padding: 25px 5px;
+        margin: 20px 0;
     }
     .footer__info{
         flex-direction: column;
@@ -1294,6 +1293,7 @@ a {
     }
     .footer__map{
         width: 90%;
+        height: 250px;
         padding: 10px 0;
     }
     .footer__logos{
