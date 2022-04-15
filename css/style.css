@@ -330,7 +330,6 @@ a {
 .section__img{
     width: 45%;
     height: auto;
-    margin: 5px 0 3px 25px;
 }
 .img__top{
     width: 100%;
@@ -609,9 +608,10 @@ a {
     object-fit: cover;
     object-position: 0px -50px;
     z-index: -5;
+    opacity: 0.3;
 }
 .section__donate{
-    background: linear-gradient(to right, rgba(108, 134, 79, .5),rgba(182, 192, 109, .5));
+    background: linear-gradient(to right, rgba(21, 65, 34, 0.5),rgba(182, 192, 109, .5));
     padding: 50px 0;
     width: 100%;
     display: flex;
