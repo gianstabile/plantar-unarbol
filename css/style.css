@@ -330,6 +330,7 @@ a {
 .section__img{
     width: 45%;
     height: auto;
+    margin: 5px 0 3px 25px;
 }
 .img__top{
     width: 100%;
@@ -561,6 +562,15 @@ a {
     grid-column:2/5;
     grid-row:4/5;
 }
+.grid-gallery__container img:nth-child(11){
+    grid-column:1/3;
+    grid-row:5/6;
+}
+.grid-gallery__container img:nth-child(12){
+    grid-column:3/5;
+    grid-row:5/6;
+}
+
 
 
 /* MAIN: Estadísticas */
@@ -574,13 +584,13 @@ a {
     justify-content: center;
 }
 .stats__img img{
-    width: 80%;
+    width: 85%;
     height: auto;
     min-height: 300px;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 .stats__img img:hover{
-   transform: scale(1.3);
+   transform: scale(1.05);
 }
 
 
@@ -660,7 +670,7 @@ a {
 /* RAIZ: Team */
 #team{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 60%;
     margin: 50px auto;
 }
@@ -674,11 +684,11 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap:50px;
+    gap:60px;
 }
 .team__people{
-    padding: 20px;
-    width: 45%;
+    /* padding: 10px; */
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -686,8 +696,9 @@ a {
 }
 
 .team__people-img{
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
+    max-width: 250px;
     margin-bottom: 20px;
     border-radius: 50%;
     object-fit: cover; 
@@ -714,7 +725,7 @@ a {
     width: 100%;
     height: 450px;
     position:absolute;
-    top: 180%;
+    top: 275%;
     outline: 0;
     border: 0;
     transform:skewY(178.5deg);
@@ -788,7 +799,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     padding: 7px;
-    margin-top: auto;
+    margin-top: 40px;
     margin-left: auto;
     position: relative;
     box-shadow: 0.5px 3px 8px gray;
@@ -979,6 +990,7 @@ a {
 .footer__info img{
     width: 100px;
     height: 90px;  
+    margin-right: 20px;
 }
 .footer__title{
     font-family: sans-serif;
@@ -986,13 +998,14 @@ a {
     line-height: 1.4;
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 4%;
 }
 .footer__p{
     font-family: sans-serif;
     text-align: justify;
     line-height: 1.5;
     font-size: 1rem;
+    width: 80%;
+    margin: 0 auto; 
 }
 .footer__menu{
     display: flex;
@@ -1040,6 +1053,9 @@ a {
 .footer__info--2{
     width: 70%;
 }
+.footer__p--2{
+    width: 100%;
+}
 .footer__map{
     width: 70%;
 }
@@ -1066,11 +1082,14 @@ a {
     margin: 0 auto;
     gap:15px;
 }
+.footer__logos a{
+    width: 110px;
+    height: 110px;
+}
 .footer__logos img{
-    width: 20%;
-    min-width: 80px;
-    max-width: 110px;
-    height: auto;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
     cursor:pointer;
     margin: 0 12px;
     padding: 5px 5px;
@@ -1185,7 +1204,9 @@ a {
     }
     #team{
         width: 97%;
+        flex-direction: column;
     }
+
     #section__form{
         width: 97%;
     }
@@ -1216,20 +1237,6 @@ a {
     }
     .arbol__img img{
         width: 100%;
-    }
-    .team__container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .team__people{
-        padding: 20px;
-        width: 98%;
-        
-    }
-    .team__people-img{
-        border-radius: 50%;
-        object-fit: cover;  
     }
     .separator{
         display:none;
@@ -1340,6 +1347,18 @@ a {
     }
     #stats{
         width: 100%;
+    }
+    .team__container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .team__people{
+        width: 60%;
+    }
+    .team__people-img{
+        border-radius: 50%;
+        object-fit: cover;  
     }
     .donate__box{
         width: 100%;
