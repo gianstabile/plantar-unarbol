@@ -507,7 +507,7 @@ a {
     height: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 5px;
     margin: 60px auto;
     padding:0;
