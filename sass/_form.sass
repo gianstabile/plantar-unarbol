@@ -1,0 +1,99 @@
+// HOJAS DE ESTILOS PARA LOS FORMULARIOS
+/* FORMULARIOS.
+#section__form
+    @include border__section
+    @include section__container
+    @include card__top
+    width: 60% 
+    margin: 80px auto
+    padding-top: 40px
+    h2
+        @include section__title
+        @include center__title
+        margin-top: 35px
+        @media screen and (max-width: $sm_screen )
+            width: 80%
+            margin-top: 50px
+
+    #form
+        margin: 0 auto
+        font-family: sans-serif
+        .form__container
+            margin: 30px auto
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            .section__subtitle
+                @include section__subtitle
+                
+            .form__items
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: start
+                gap: 50px
+                .form__item
+                    display: flex
+                    flex-direction: column
+                    width: 330px
+
+                a
+                    display: block
+                    margin-left: auto
+                    @media screen and (max-width: $m_screen )
+                        margin: 0 auto
+
+                .form__btn
+                    background-color: $backcolor2
+                    border-radius: 3px
+                    color: $textcolor2
+                    width: 115px
+                    height: 40px
+                    text-align: center
+                    text-transform: uppercase
+                    font-size: 14px
+                    padding: 10px
+                    margin-top: auto
+                    margin-left: auto
+                    position: relative
+                    box-shadow: 0.5px 3px 8px gray
+                    &::before
+                        content: "+ "
+                        font-size: 20px
+                        padding: 5px
+                        position: absolute
+                        top: 1%
+                        left: 22%
+                        opacity: 0
+                        cursor: pointer
+                        transition: all 0.3s
+
+                    &:hover
+                        color: $textcolor2
+                        padding-left: 30px
+                        background-color: $backcolor3
+                        color: $textcolor2
+                        cursor: pointer
+                        width: 130px
+                        &::before
+                            left: 10%
+                            opacity: 1
+
+            @media screen and (max-width: $sm_screen )
+                padding: 0
+                
+        @media screen and (max-width: $m_screen )
+            flex-direction: column
+            justify-content: start
+            align-items: flex-start
+
+        @media screen and (max-width: $sm_screen )
+            padding: 15px
+            margin: 0
+
+    @media screen and (max-width: $m_screen )
+        width: 97%
+  
+    @media screen and (max-width: $sm_screen )
+        padding: 0

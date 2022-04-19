@@ -1,0 +1,43 @@
+//HOJA DE ESTILOS PRINCIPAL. ACÁ SE IMPORTAN LOS PARTIALS.
+/*GOOGLE FONTS.
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Open+Sans:wght@300;400;500&family=Roboto+Condensed&display=swap')
+@import variables
+
+/* ESTILOS GENERALES
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    scroll-behavior: smooth
+    &::selection
+            background: $backcolor2
+            color: $textcolor2
+    body 
+        background: radial-gradient(white,#eef6ee)
+        font-family: $txt_p
+
+        a
+            text-decoration: none
+
+//PARTIALS HEADER Y LAYOUT
+@import ./_header
+@import ./_layout
+
+/* PARTIAL DEL MAIN
+@import ./_content
+
+//PARTIAL DEL BOOTSTRAP
+@import ./_bs
+
+//PARTIAL DEL FORMULARIO
+@import ./_form
+
+//PARTIAL DEL FOOTER
+@import ./_footer
+
+//SEPARADORES 
+.separator
+  @include separator()
+  @media screen and (max-width: $m_screen )
+      display: none

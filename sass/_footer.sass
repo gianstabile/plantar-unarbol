@@ -1,0 +1,252 @@
+// HOJA DE ESTILOS PARA EL PIE DE PÁGINA
+@use footer__info 
+@use footer__title
+@use footer__p
+
+/*FOOTER
+#footer
+    @include border__section
+    grid-area: footer
+    width: 80%
+    height: auto
+    margin: 40px auto 20px auto
+    background-color: $backcolor1
+    .footer__container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-content: center
+        gap: 20px
+        .footer__1
+            display: flex
+            flex-direction: column
+            width: 100%
+            overflow-y: hidden
+            overflow-x: hidden
+            margin-left: 20px
+            padding: 50px 20px
+            gap: 15px
+            .footer__info
+                @include footer__info
+                img
+                    width: 100px
+                    height: 90px
+                    margin-right: 20px
+
+                .footer__title
+                    @include footer__title()
+                    @media screen and (max-width: $m_screen )
+                        text-align: left
+                        margin-top: 15px
+
+                .footer__p
+                    @include footer__p()
+                    @media screen and (max-width: $m_screen )
+                        padding: 0
+                        margin: 0
+                        width: 98%
+                        margin-top: 10px
+
+                @media screen and (max-width: $m_screen )
+                    flex-direction: column
+                    align-items: center
+                    margin: 0
+                    padding: 0 30px
+
+            .footer__menu
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                margin-top: 15px
+                ul
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    flex-wrap: wrap
+                    list-style: none
+                    width: 80%
+                    padding: 0
+                    @media screen and (max-width: $m_screen )
+                        margin: 0
+                        padding: 0
+
+                    li
+                        text-transform: uppercase
+                        font-family: $txt_menu
+                        font-size: 80%
+                        padding: 0 3%
+                        @media screen and (max-width: $m_screen )
+                            padding: 0
+
+                        @media screen and (max-width: $sm_screen )
+                             padding: 0 0
+                             margin: 0 auto
+
+                    a
+                        color: $textcolor2
+                        &:hover
+                            color: $color1
+                            transition: all 0.5s
+                            text-decoration-thickness: 15%
+                            text-decoration-line: underline
+                            text-underline-offset: 10px
+
+                    @media screen and (max-width: $m_screen )
+                        padding: 0
+                        margin: 0
+                        width: 80%
+                        justify-content: center
+
+                    @media screen and (max-width: $sm_screen ) 
+                        padding: 0
+                        margin: 0
+                        width: 100%
+                        justify-content: center
+
+            @media screen and (max-width: $m_screen )
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: auto
+                padding: 25px 5px
+                margin: 20px 0
+
+        .footer__2
+            display: flex
+            justify-content: space-between
+            width: 100%
+            gap: 30px
+            height: auto
+            padding: 50px 20px
+            overflow-y: hidden
+            .footer__info--2
+                width: 70%
+                .footer__title
+                    @include footer__title()
+                    text-align: left
+                    @media screen and (max-width: $m_screen )
+                        text-align: center
+
+                .footer__p--2
+                    @include footer__p()
+                    width: 100%
+
+                @media screen and (max-width: $m_screen )
+                    width: 100%
+                    padding: 0 25px
+
+            .footer__map
+                width: 70%
+                @media screen and (max-width: $m_screen )
+                    width: 90%
+                    height: 250px
+                    padding: 10px 0
+
+            @media screen and (max-width: $m_screen )
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: auto
+                padding: 25px 5px
+                margin: 20px 0
+
+        .footer__3
+            display: flex
+            flex-direction: column
+            justify-content: start
+            align-content: space-around
+            width: 100%
+            margin: 0 auto
+            height: auto
+            max-height: 400px
+            padding: 50px 20px
+            overflow-y: hidden
+            .footer__title
+                @include footer__title()
+                
+            .footer__logos
+                display: flex
+                justify-content: start
+                align-items: stretch
+                flex-wrap: wrap
+                padding: 0
+                margin: 0 auto
+                gap: 15px
+                a
+                    width: 110px
+                    height: 110px
+                    img
+                        width: auto
+                        height: 100%
+                        object-fit: cover
+                        cursor: pointer
+                        margin: 0 12px
+                        padding: 5px 5px
+                        filter: grayscale(.7)
+                        max-height: 200px
+                        &:hover
+                            filter: grayscale(0)
+
+                        @media screen and (max-width: $sm_screen )
+                            margin: 0
+
+                @media screen and (max-width: $m_screen )
+                    justify-content: center
+                    gap: 30px
+                
+                @media screen and (max-width: $sm_screen )
+                    gap: 0
+
+            @media screen and (max-width: $m_screen )
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: auto
+                padding: 25px 5px
+                margin: 20px 0
+
+
+        @media screen and (max-width: $m_screen )
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-content: center
+            height: auto
+            gap: 10px
+
+        @media screen and (max-width: $sm_screen )  
+            width: 100%
+
+
+/*COPYRIGHT
+.copyright
+    margin: 5px auto
+    width: 100%
+    height: 30px
+    font-size: 13px
+    text-align: center
+    grid-column: 1/4
+    a
+        color: $color2
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 11px
+        &:hover
+            color: $color1
+            transition: all 0.5s
+            text-decoration-thickness: 15%
+            text-decoration-line: underline
+            text-underline-offset: 10px
+
+    span
+        color: $textcolor1
+        font-weight: 600
+        cursor: pointer
+
+    @media screen and (max-width: $m_screen )
+        width: 75%
+        margin: 10% auto
