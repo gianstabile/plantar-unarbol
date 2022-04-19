@@ -1971,12 +1971,9 @@
 
 @media screen and (max-width: 480px) {
   #footer .footer__container .footer__1 .footer__menu ul {
-    padding: 0;
+    display: none;
     margin: 0;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding: 0;
   }
 }
 
@@ -1996,6 +1993,12 @@
     height: auto;
     padding: 25px 5px;
     margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #footer .footer__container .footer__1 {
+    margin: 0;
   }
 }
 
@@ -2076,7 +2079,7 @@
     width: 100%;
     height: auto;
     padding: 25px 5px;
-    margin: 20px 0;
+    margin: 0;
   }
 }
 
