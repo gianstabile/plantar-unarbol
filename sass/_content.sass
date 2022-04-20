@@ -64,7 +64,7 @@
                     line-height: 25px
                     padding: 10px 0
                     @media screen and (max-width: $sm_screen )
-                        width: 97%
+                        width: 100%
 
 
                 .button
@@ -192,6 +192,7 @@
 
             @media screen and (max-width: $sm_screen ) 
                 width: 100%
+                text-align: center
 
             .right__content
                 display: flex
@@ -337,6 +338,10 @@
                 @include section__container()
                 .section__title
                     @include section__title()
+                    @media screen and (max-width: $sm_screen ) 
+                        width: 100%
+                        margin-bottom: 25px
+                        text-align: center
 
             .team__box
                 flex-direction: column

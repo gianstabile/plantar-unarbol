@@ -388,7 +388,7 @@
 
 @media screen and (max-width: 480px) {
   #main .main__container .main__video .main__actionbtn p {
-    width: 97%;
+    width: 100%;
   }
 }
 
@@ -491,6 +491,13 @@
   text-shadow: 3px 5px 10px #666;
 }
 
+@media screen and (max-width: 480px) {
+  #main .main__container #label .label__title {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #main .main__container #label h1 {
     padding: 0% 8%;
@@ -501,7 +508,6 @@
   #main .main__container #label {
     font-size: 25px;
     width: 100%;
-    text-align: center;
   }
 }
 
@@ -747,6 +753,7 @@
 @media screen and (max-width: 480px) {
   #main .main__container #section {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -1136,6 +1143,14 @@
 #main .main__container #team .section__container .section__title:hover::before {
   opacity: 1;
   display: inline;
+}
+
+@media screen and (max-width: 480px) {
+  #main .main__container #team .section__container .section__title {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 }
 
 #main .main__container #team .team__box {
