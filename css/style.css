@@ -484,7 +484,7 @@
   color: white;
   letter-spacing: 4px;
   font-size: 27px;
-  font-weight: 600;
+  font-weight: 700;
   padding-left: 8%;
   position: absolute;
   top: 45%;
@@ -1859,7 +1859,7 @@
   text-align: justify;
   line-height: 1.4;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2040,7 +2040,7 @@
   text-align: justify;
   line-height: 1.4;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
 }
 
@@ -2124,7 +2124,7 @@
   text-align: justify;
   line-height: 1.4;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #footer .footer__container .footer__3 .footer__logos {
@@ -2247,7 +2247,7 @@
 .copyright a {
   color: forestgreen;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 11px;
 }
 
@@ -2263,7 +2263,7 @@
 
 .copyright span {
   color: #333;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 

@@ -5,6 +5,9 @@ $txt_menu: "Roboto Condensed", serif
 $txt_title: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
 $txt_label: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 
+// FONTS MAP
+$font-weight: ("light": 100, "regular": 400, "medio": 500, "grueso": 700)
+
 //COLORS VARS
 $color1: green
 $color2: forestgreen
@@ -125,7 +128,7 @@ $sm_screen: 480px
         content: "+ "
         font-size: 20px
         font-family: $txt_p
-        font-weight: 100
+        font-weight: map-get($font-weight, "light" )
         padding: 5px
         position: absolute
         top: 4%
@@ -164,7 +167,7 @@ $sm_screen: 480px
         color: white
         letter-spacing: 4px
         font-size: 27px
-        font-weight: 600
+        font-weight: map-get($font-weight, "grueso")
         padding-left: 8%
         position: absolute
         top: 45%
@@ -219,7 +222,7 @@ $sm_screen: 480px
     text-align: justify
     line-height: 1.4
     font-size: 1rem
-    font-weight: 600
+    font-weight: map-get($font-weight, "grueso" )
 @mixin footer__p()
     font-family: $txt_p
     text-align: justify
@@ -228,4 +231,4 @@ $sm_screen: 480px
     width: 95%
     margin: 15px 0
 
-    
+// EXTEND  SEPARATOR
