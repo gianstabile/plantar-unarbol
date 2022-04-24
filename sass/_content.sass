@@ -111,15 +111,29 @@
 
         /*SEPARADORES
         .separator
-            @include separator
+            background: $gradient1
+            width: 100%
+            height: 450px
+            position: absolute
+            top: 275%
+            outline: 0
+            border: 0
+            transform: skewY(178.5deg)
+            z-index: -1
+            opacity: 0.7
+            @media screen and (max-width: $m_screen )
+                display: none
 
         .line--plantar
+            @extend .separator
             top: 1050px
 
         .line--cuidar
+            @extend .separator
             top: 1250px
 
         .line--sumarse
+            @extend .separator
             top: 950px
 
         /* BREADCRUMBS
