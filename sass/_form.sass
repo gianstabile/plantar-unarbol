@@ -18,7 +18,7 @@
     #form
         margin: 0 auto
         font-family: sans-serif
-        .form__container
+        .formBox
             margin: 30px auto
             width: 100%
             display: flex
@@ -27,13 +27,13 @@
             .section__subtitle
                 @include section__subtitle
                 
-            .form__items
+            &__items
                 display: flex
                 flex-direction: column
                 justify-content: space-around
                 align-items: start
                 gap: 50px
-                .form__item
+                &__single
                     display: flex
                     flex-direction: column
                     width: 330px
@@ -44,7 +44,7 @@
                     @media screen and (max-width: $m_screen )
                         margin: 0 auto
 
-                .form__btn
+                &__btn
                     background-color: $backcolor2
                     border-radius: 3px
                     color: $textcolor2
