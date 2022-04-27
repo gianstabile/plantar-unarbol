@@ -155,6 +155,10 @@
                         height: auto
                         max-height: 500px
                         object-fit: cover
+
+                    @media screen and (max-width: $m_screen )
+                        width: 100%
+
                 &__info
                     @include section__info()
                     &__title
@@ -192,8 +196,6 @@
                 @media screen and (max-width: $m_screen )
                     flex-direction: column
                     padding: 7%
-                    .section__img
-                        width: 100%
 
             .card__top
                 @include card__top()
@@ -209,6 +211,9 @@
                     height: 500px
                     width: 500px
                     object-fit: cover 
+                    @media screen and (max-width: $sm_screen )
+                        width: 100%
+                        margin: 15px 0
 
             @media screen and (max-width: $m_screen )
                 width: 97%
@@ -352,7 +357,8 @@
                     @media screen and (max-width: $sm_screen ) 
                         width: 100%
                         margin-bottom: 25px
-                        text-align: center
+                        text-align: center 
+
 
             .teamBox
                 flex-direction: column

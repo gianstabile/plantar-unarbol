@@ -632,6 +632,12 @@
      object-fit: cover;
 }
 
+@media screen and (max-width: 1024px) {
+  #main .mainContent #section .contentBox__img {
+    width: 100%;
+  }
+}
+
 #main .mainContent #section .contentBox__info {
   font-family: "Open Sans", sans-serif;
   padding: 0 30px;
@@ -719,9 +725,6 @@
             flex-direction: column;
     padding: 7%;
   }
-  #main .mainContent #section .contentBox .section__img {
-    width: 100%;
-  }
 }
 
 #main .mainContent #section .card__top {
@@ -759,6 +762,13 @@
   width: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  #main .mainContent #section .right__content img {
+    width: 100%;
+    margin: 15px 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
