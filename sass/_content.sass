@@ -18,14 +18,14 @@
 /* MAIN.
 #main
     grid-area: main
-    .main__container
+    .mainContent
         width: 100%
         height: auto
         display: flex
         flex-direction: column
         justify-content: space-around
         align-items: center
-        .main__video
+        &__video
             width: 100%
             height: auto
             display: flex
@@ -40,7 +40,7 @@
                 filter: brightness(0.5)
                 object-fit: cover
 
-            .main__actionbtn
+            &__info
                 display: flex
                 top: 50%
                 left: 35%
@@ -144,10 +144,10 @@
             @include border__section()
             width: 70%
             margin: 60px auto
-            .section__container
+            .contentBox
                 @include section__container
                 @include card__right()
-                .section__img
+                &__img
                     width: 45%
                     height: auto
                     img
@@ -155,18 +155,18 @@
                         height: auto
                         max-height: 500px
                         object-fit: cover
-                .section__info
+                &__info
                     @include section__info()
-                    .section__title
+                    &__title
                         @include section__title()
 
-                    .section__subtitle
+                    &__subtitle
                         @include section__subtitle()                    
 
-                    .section__p
+                    &__txt
                         @include section__p()
                     
-                    .section__img
+                    &__img
                         width: 45%
                         height: auto
                         padding-left: 25px
@@ -198,16 +198,6 @@
             .card__top
                 @include card__top()
 
-            .section__title
-                @include section__title()
-
-            @media screen and (max-width: $m_screen )
-                width: 97%
-
-            @media screen and (max-width: $sm_screen ) 
-                width: 100%
-                text-align: center
-
             .right__content
                 display: flex
                 flex-direction: row-reverse
@@ -218,12 +208,19 @@
                 img
                     height: 500px
                     width: 500px
-                    object-fit: cover        
+                    object-fit: cover 
+
+            @media screen and (max-width: $m_screen )
+                width: 97%
+
+            @media screen and (max-width: $sm_screen ) 
+                width: 100%
+                text-align: center       
 
         /* GALERÍA DEL INDEX.
-        #gallery
+        #miniGallery
             grid-area: gallery
-            .section__gallery
+            .galleryBox
                 width: 100%
                 height: 100vh
                 display: grid
@@ -231,7 +228,7 @@
                 grid-template-rows: repeat(2, 1fr)
                 gap: 0
                 margin: 30px auto
-                padding: 0
+                padding: 0 
                 img
                     width: 100%
                     height: 100%
@@ -287,11 +284,11 @@
                     &:hover
                         transform: scale(1.05)                
 
-            .section__info
+            .contentBox__info
                 @include section__info()
-                .section__title
+                &__title
                     @include section__title()
-                .section__p
+                &__txt
                     @include section__p()
 
                 @media screen and (max-width: $m_screen )
@@ -348,32 +345,32 @@
             flex-direction: row
             width: 60%
             margin: 50px auto
-            .section__container
+            .contentBox__info
                 @include section__container()
-                .section__title
+                &__title
                     @include section__title()
                     @media screen and (max-width: $sm_screen ) 
                         width: 100%
                         margin-bottom: 25px
                         text-align: center
 
-            .team__box
+            .teamBox
                 flex-direction: column
 
-            .team__container
+            .teamContent
                 display: flex
                 flex-direction: row
                 flex-wrap: wrap
                 justify-content: center
                 align-items: flex-start
                 gap: 60px
-                .team__people
+                &__people
                     width: 25%
                     display: flex
                     flex-direction: column
                     justify-content: center
                     align-items: center
-                    .team__people-img
+                    &__img
                         height: 100%
                         width: 100%
                         max-width: 250px
@@ -388,13 +385,13 @@
                             border-radius: 50%
                             object-fit: cover
 
-                    .team__people-title
+                    &__title
                         text-transform: uppercase
                         font-size: 20px
                         padding: 20px 0
                         text-align: center
 
-                    .team__people-p
+                    &__p
                         font-size: 1.1rem
                         padding: 10px 0
                         line-height: 2
@@ -417,7 +414,7 @@
             margin: 60px auto
             display: flex
             flex-direction: column
-            .arboles__container
+            .treeBox
                 display: flex
                 justify-content: space-evenly
                 align-items: start
@@ -433,7 +430,7 @@
                     &:hover
                         filter: grayscale(0)
 
-                .arbol__btn
+                &__btn
                     background-color: $backcolor2
                     border-radius: 3px
                     font-size: 15px
@@ -473,17 +470,12 @@
                     align-items: center        
                     width: 100%
                     gap: 50px
-                    .arbol__card
-                        width: 90%
-
-                    .arbol__img img
-                        width: 100%
         
         /* GALERÍA DE CUIDAR
-        #grid-gallery
+        #gallery
             width: 100%
             height: 100%
-            .grid-gallery__container
+            .gridGallery
                 width: 100%
                 height: auto
                 display: grid

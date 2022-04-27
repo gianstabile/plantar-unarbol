@@ -11,13 +11,13 @@
     height: auto
     margin: 40px auto 20px auto
     background-color: $backcolor1
-    .footer__container
+    .footerBox
         display: flex
         flex-direction: row
         justify-content: space-between
         align-content: center
         gap: 20px
-        .footer__1
+        &__1
             display: flex
             flex-direction: column
             width: 100%
@@ -26,20 +26,20 @@
             margin-left: 20px
             padding: 50px 20px
             gap: 15px
-            .footer__info
+            &__info
                 @include footer__info
                 img
                     width: 100px
                     height: 90px
                     margin-right: 20px
 
-                .footer__title
+                &__title
                     @include footer__title()
                     @media screen and (max-width: $m_screen )
                         text-align: left
                         margin-top: 15px
 
-                .footer__p
+                &__txt
                     @include footer__p()
                     @media screen and (max-width: $m_screen )
                         padding: 0
@@ -53,7 +53,7 @@
                     margin: 0
                     padding: 0 30px
 
-            .footer__menu
+            &__menu
                 display: flex
                 justify-content: center
                 align-items: center
@@ -115,7 +115,7 @@
             @media screen and (max-width: $sm_screen )
                 margin: 0
                 
-        .footer__2
+        &__2
             display: flex
             justify-content: space-between
             width: 100%
@@ -123,15 +123,15 @@
             height: auto
             padding: 50px 20px
             overflow-y: hidden
-            .footer__info--2
+            &__info
                 width: 70%
-                .footer__title
+                &__title
                     @include footer__title()
                     text-align: left
                     @media screen and (max-width: $m_screen )
                         text-align: center
 
-                .footer__p--2
+                &__txt
                     @include footer__p()
                     width: 100%
 
@@ -139,7 +139,7 @@
                     width: 100%
                     padding: 0 25px
 
-            .footer__map
+            &__map
                 width: 70%
                 @media screen and (max-width: $m_screen )
                     width: 90%
@@ -155,7 +155,7 @@
                 padding: 25px 5px
                 margin: 0
 
-        .footer__3
+        &__3
             display: flex
             flex-direction: column
             justify-content: start
@@ -166,10 +166,10 @@
             max-height: 400px
             padding: 50px 20px
             overflow-y: hidden
-            .footer__title
+            &__title
                 @include footer__title()
                 
-            .footer__logos
+            &__logos
                 display: flex
                 justify-content: start
                 align-items: stretch
