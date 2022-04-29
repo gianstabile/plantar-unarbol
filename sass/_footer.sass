@@ -1,7 +1,4 @@
 // HOJA DE ESTILOS PARA EL PIE DE PÁGINA
-@use footer__info 
-@use footer__title
-@use footer__p
 
 /*FOOTER
 #footer
@@ -27,20 +24,32 @@
             padding: 50px 20px
             gap: 15px
             &__info
-                @include footer__info
+                display: flex
+                width: 100%
+                gap: 20px
+                margin-left: 15px
                 img
                     width: 100px
                     height: 90px
                     margin-right: 20px
 
                 &__title
-                    @include footer__title()
+                    font-family: $txt__p
+                    text-align: justify
+                    line-height: 1.4
+                    font-size: 1rem
+                    font-weight: map-get($font-weight, "grueso" )
                     @media screen and (max-width: $m_screen )
                         text-align: left
                         margin-top: 15px
 
                 &__txt
-                    @include footer__p()
+                    font-family: $txt__p
+                    text-align: justify
+                    line-height: 1.5
+                    font-size: 1rem
+                    width: 95%
+                    margin: 15px 0
                     @media screen and (max-width: $m_screen )
                         padding: 0
                         margin: 0
@@ -126,13 +135,13 @@
             &__info
                 width: 70%
                 &__title
-                    @include footer__title()
+                    @extend .footerBox__1__info__title
                     text-align: left
                     @media screen and (max-width: $m_screen )
                         text-align: center
 
                 &__txt
-                    @include footer__p()
+                    @extend .footerBox__1__info__txt
                     width: 100%
 
                 @media screen and (max-width: $m_screen )
@@ -167,7 +176,7 @@
             padding: 50px 20px
             overflow-y: hidden
             &__title
-                @include footer__title()
+                @extend .footerBox__1__info__title
                 
             &__logos
                 display: flex
@@ -251,4 +260,5 @@
 
     @media screen and (max-width: $m_screen )
         width: 75%
-        margin: 10% auto
+        padding-bottom: 15px
+        margin: 15px auto

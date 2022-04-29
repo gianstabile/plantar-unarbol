@@ -1,19 +1,8 @@
 //HOJA DE ESTILOS PARA EL CONTENIDO
 @use section__container
-@use card__top
-@use card__right
-@use section__info
 @use section__title
-@use center__title
 @use section__subtitle
-@use section__subtitle--right
-@use section__p
 @use border__section
-@use section__btn
-@use scroll__up
-@use label
-@use breadcrumb
-@use selection
 
 /* MAIN.
 #main
@@ -107,7 +96,42 @@
                     flex-direction: column
         /* LABEL DE SECCION
         #label
-            @include label()
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 100%
+            height: 245px
+            position: relative
+            gap: 0
+            border: 0
+            .label__img
+                filter: brightness(50%)
+                width: 100%
+                height: 250px
+                object-fit: cover
+                z-index: 1
+
+            .label__title
+                font-family: $txt__label
+                color: white
+                letter-spacing: 4px
+                font-size: 27px
+                font-weight: map-get($font-weight, "grueso")
+                padding-left: 8%
+                position: absolute
+                top: 45%
+                text-shadow: 3px 5px 10px #666
+                @media screen and (max-width: $sm_screen )
+                    text-align: center
+                    width: 100%
+
+            @media screen and (max-width: $m_screen )
+                h1
+                    padding: 0% 8%
+
+            @media screen and (max-width: $sm_screen )
+                font-size: 25px
+                width: 100%
 
         /*SEPARADORES
         .separator
@@ -125,28 +149,46 @@
                 display: none
 
         .line--plantar
-            @extend .separator
             top: 1050px
 
         .line--cuidar
-            @extend .separator
             top: 1250px
 
         .line--sumarse
-            @extend .separator
             top: 950px
 
         /* BREADCRUMBS
         #breadcrumb
-            @include breadcrumb()
+            width: 100%
+            height: 50px
+            background: $gradient1
+            opacity: 0.7
+            ul
+                list-style: none
+                font-size: 14px
+                padding: 15px 30px
+                li
+                    display: inline
+                    font-family: $txt__menu
+                    letter-spacing: 1px
+                    &+li::before
+                        color: $textcolor1
+                        content: ">\00a0"
+
+                    a
+                        color: $textcolor1
+                        &:hover
+                            color: $backcolor1
+                            transition: all 0.2s
+            @media screen and ( max-width: $m_screen)
+                display: none
 
         #section
             @include border__section()
             width: 70%
             margin: 60px auto
             .contentBox
-                @include section__container
-                @include card__right()
+                @include section__container (row-reverse, space-around,)
                 &__img
                     width: 45%
                     height: auto
@@ -160,15 +202,25 @@
                         width: 100%
 
                 &__info
-                    @include section__info()
+                    font-family: $txt__p
+                    padding: 0 30px
+                    width: 90%
+                    height: auto
+                    margin: 0 auto
                     &__title
                         @include section__title()
+                        @media screen and (max-width: $m_screen )
+                            text-align: center
 
                     &__subtitle
-                        @include section__subtitle()                    
-
+                        @include section__subtitle(left,)
+                    
                     &__txt
-                        @include section__p()
+                        font-family: $txt__p
+                        text-align: justify
+                        font-size: 1.1rem
+                        line-height: 2
+                        margin-top: 10px
                     
                     &__img
                         width: 45%
@@ -198,7 +250,11 @@
                     padding: 7%
 
             .card__top
-                @include card__top()
+                @include section__container (column, space-between,)
+                .img__top
+                    width: 100%
+                    height: 500px
+                    object-fit: cover
 
             .right__content
                 display: flex
@@ -274,12 +330,31 @@
 
         /* ESTADÍSTICAS EN EL INDEX.
         #stats
-            @include section__container
             @include border__section()
-            @include card__top
+            @include section__container(column)
             width: 60%
             height: auto
             margin: 30px auto
+            .contentBox__info
+                width: 85%
+                margin: 10px auto
+                &__title
+                    @include section__title()
+
+                &__txt
+                    font-family: $txt__p
+                    text-align: justify
+                    font-size: 1.1rem
+                    line-height: 2
+
+                @media screen and (max-width: $m_screen )
+                    width: 100%
+                    padding: 5px
+                    text-align: center
+
+                @media screen and (max-width: $sm_screen )
+                    width: 100%
+
             .stats__img
                 display: flex
                 justify-content: center
@@ -289,21 +364,6 @@
                     min-height: 300px
                     &:hover
                         transform: scale(1.05)                
-
-            .contentBox__info
-                @include section__info()
-                &__title
-                    @include section__title()
-                &__txt
-                    @include section__p()
-
-                @media screen and (max-width: $m_screen )
-                    width: 100%
-                    padding: 5px
-                    text-align: center
-
-                @media screen and (max-width: $sm_screen )
-                    width: 100%
 
             @media screen and (max-width: $m_screen )
                 width: 97%
@@ -342,7 +402,45 @@
                 justify-content: center
                 align-items: center
                 button
-                    @include section__btn()
+                    background-color: $backcolor2
+                    border-radius: 3px
+                    color: $textcolor2
+                    width: 120px
+                    height: 45px
+                    text-align: center
+                    text-transform: uppercase
+                    font-size: 16px
+                    padding: 10px
+                    margin: 15px auto
+                    position: relative
+                    box-shadow: 0.5px 3px 8px gray
+                    @media screen and (max-width: $sm_screen ) 
+                        margin-bottom: 25px
+                        
+                    &:hover
+                        color: $textcolor2
+                        padding-left: 30px
+                        background-color: $backcolor3
+                        cursor: pointer
+                        width: 130px
+                        &:before
+                            left: 35%
+                            opacity: 1
+                            @media screen and (max-width: $sm_screen )
+                                left: 30%
+
+                    &::before
+                        content: "+ "
+                        font-size: 20px
+                        font-family: $txt__p
+                        font-weight: map-get($font-weight, "light" )
+                        padding: 5px
+                        position: absolute
+                        top: 4%
+                        left: 40%
+                        opacity: 0
+                        cursor: pointer
+                        transition: all 0.3s  
         
         /* RAIZ: Team
         #team
@@ -352,7 +450,7 @@
             width: 60%
             margin: 50px auto
             .contentBox__info
-                @include section__container()
+                @include section__container(column,)
                 &__title
                     @include section__title()
                     @media screen and (max-width: $sm_screen ) 
@@ -554,12 +652,6 @@
                     img:nth-child(-n+10)
                         grid-column: 1/5
                         grid-row: auto
-
-        /* BOTÓN SCROLL UP
-        #btn-back-to-top 
-            @include scroll__up()
-            @media screen and (max-width: $m_screen )
-                visibility: hidden
         
 /*ANCLA
 #ancla a

@@ -2,18 +2,16 @@
 /* FORMULARIOS.
 #section__form
     @include border__section
-    @include section__container
-    @include card__top
+    @include section__container (column, space-between,)
     width: 60% 
     margin: 80px auto
     padding-top: 40px
     h2
-        @include section__title
-        @include center__title
+        @include section__title (center)
         margin-top: 35px
         @media screen and (max-width: $sm_screen )
             width: 80%
-            margin-top: 50px
+            margin: 50px auto 0 auto
 
     #form
         margin: 0 auto
@@ -25,7 +23,8 @@
             flex-direction: column
             align-items: center
             &__subtitle
-                @include section__subtitle
+                @include section__subtitle (left,)
+                
                 
             &__items
                 display: flex

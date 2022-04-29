@@ -25,32 +25,23 @@ $m_screen: 1024px
 $sm_screen: 480px
 
 //MIXINS 
-@mixin section__container()
+@mixin section__container($direction: row, $justify: space-around,)
     display: flex
+    flex-direction: $direction
+    justify-content: $justify
     gap: 30px
     width: 100%
     height: auto
     padding: 50px
     background-color: $backcolor1
     color: $textcolor1
-@mixin card__top()
-    flex-direction: column
-    .img__top
-        width: 100%
-        height: 500px
-        object-fit: cover
-@mixin card__right()
-    flex-direction: row-reverse
-    justify-content: space-around
-@mixin section__info()
-    font-family: $txt__p
-    padding: 0 30px
-    width: 90%
-    height: auto
-    margin: 0 auto
-@mixin section__title()
+    @media screen and (max-width: $m_screen )
+        padding: 20px
+
+@mixin section__title($align: left)
     font-family: $txt__title
     text-transform: uppercase
+    text-align: $align
     letter-spacing: 2.5px
     font-size: 20px
     cursor: pointer
@@ -62,160 +53,17 @@ $sm_screen: 480px
     &:hover::before
         opacity: 1
         display: inline
-@mixin center__title()
-    text-align: center
-    margin: 0 auto
-@mixin section__subtitle()
+    
+    @media screen and (max-width: $sm_screen )
+            width: 80%
+            text-align: center
+            margin: 20px auto 10px auto
+@mixin section__subtitle($align,)
     font-family: $txt__title
     font-size: 20px
+    text-align: $align
     color: inherit
-    padding: 15px 0
-@mixin section__subtitle--right()
-    font-family: $txt__title
-    font-size: 20px
-    text-align: right
-    color: inherit
-    padding: 15px 0
-@mixin section__p()
-    font-family: $txt__p
-    font-size: 1.1rem
-    line-height: 2
-    margin-top: 10px
-    text-align: justify    
+    padding: 15px 0 
 @mixin border__section()
     box-shadow: 6px 10px 5px lightgray
     outline: 0.5px solid lightgrey
-@mixin section__btn()
-    background-color: $backcolor2
-    border-radius: 3px
-    color: $textcolor2
-    width: 120px
-    height: 45px
-    text-align: center
-    text-transform: uppercase
-    font-size: 16px
-    padding: 10px
-    margin: 15px auto
-    position: relative
-    box-shadow: 0.5px 3px 8px gray
-    @media screen and (max-width: $sm_screen ) 
-        margin-bottom: 25px
-        
-    &:hover
-        color: $textcolor2
-        padding-left: 30px
-        background-color: $backcolor3
-        cursor: pointer
-        width: 130px
-        &:before
-            left: 35%
-            opacity: 1
-            @media screen and (max-width: $sm_screen )
-                left: 30%
-
-    &::before
-        content: "+ "
-        font-size: 20px
-        font-family: $txt__p
-        font-weight: map-get($font-weight, "light" )
-        padding: 5px
-        position: absolute
-        top: 4%
-        left: 40%
-        opacity: 0
-        cursor: pointer
-        transition: all 0.3s  
-@mixin scroll__up()
-    position: fixed
-    bottom: 20px
-    right: 20px
-    width: 55px
-    height: 30px
-    display: none
-    outline: 1px solid #999
-    &:hover
-    background-color: $backcolor2
-@mixin label()
-    display: flex
-    flex-direction: column
-    justify-content: center
-    width: 100%
-    height: 245px
-    position: relative
-    gap: 0
-    border: 0
-    .label__img
-        filter: brightness(50%)
-        width: 100%
-        height: 250px
-        object-fit: cover
-        z-index: 1
-
-    .label__title
-        font-family: $txt__label
-        color: white
-        letter-spacing: 4px
-        font-size: 27px
-        font-weight: map-get($font-weight, "grueso")
-        padding-left: 8%
-        position: absolute
-        top: 45%
-        text-shadow: 3px 5px 10px #666
-        @media screen and (max-width: $sm_screen )
-            text-align: center
-            width: 100%
-
-    @media screen and (max-width: $m_screen )
-        h1
-            padding: 0% 8%
-
-    @media screen and (max-width: $sm_screen )
-        font-size: 25px
-        width: 100%
-@mixin breadcrumb()
-    width: 100%
-    height: 50px
-    background: $gradient1
-    opacity: 0.7
-    ul
-        list-style: none
-        font-size: 14px
-        padding: 15px 30px
-        li
-            display: inline
-            font-family: $txt__menu
-            letter-spacing: 1px
-            &+li::before
-                color: $textcolor1
-                content: ">\00a0"
-
-            a
-                color: $textcolor1
-                &:hover
-                    color: $backcolor1
-                    transition: all 0.2s
-
-            
-        
-            
-
-    @media screen and ( max-width: $m_screen)
-         display: none
-@mixin footer__info 
-    display: flex
-    width: 100%
-    gap: 20px
-    margin-left: 15px
-@mixin footer__title()
-    font-family: $txt__p
-    text-align: justify
-    line-height: 1.4
-    font-size: 1rem
-    font-weight: map-get($font-weight, "grueso" )
-@mixin footer__p()
-    font-family: $txt__p
-    text-align: justify
-    line-height: 1.5
-    font-size: 1rem
-    width: 95%
-    margin: 15px 0
