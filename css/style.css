@@ -1394,6 +1394,11 @@
           box-shadow: 0.5px 3px 8px gray;
 }
 
+#main .mainContent #arboles .treeBox__btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #main .mainContent #arboles .treeBox__btn::after {
   content: " >";
   font-size: 18px;
@@ -2327,7 +2332,6 @@
 @media screen and (max-width: 1024px) {
   .copyright {
     width: 75%;
-    padding-bottom: 15px;
     margin: 15px auto;
   }
 }
