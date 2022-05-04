@@ -200,6 +200,7 @@
 
                     @media screen and (max-width: $m_screen )
                         width: 100%
+                        object-fit: contain
 
                 &__info
                     font-family: $txt__p
@@ -270,7 +271,8 @@
                     margin-left: 25px
                     @media screen and (max-width: $sm_screen )
                         width: 100%
-                        margin: 15px 0
+                        margin: -55px 0
+                        object-fit: contain
 
             @media screen and (max-width: $m_screen )
                 width: 97%
@@ -363,13 +365,15 @@
                     height: auto
                     min-height: 300px
                     &:hover
-                        transform: scale(1.05)                
+                        transform: scale(1.05)
+
+                    @media screen and (max-width: $m_screen )
+                        width: 100%
+                        height: auto
+                        min-height: auto
 
             @media screen and (max-width: $m_screen )
                 width: 97%
-                .stats__img
-                    width: 100%
-                    height: auto
 
             @media screen and (max-width: $sm_screen ) 
                 width: 100%

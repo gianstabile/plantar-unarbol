@@ -640,6 +640,8 @@
 @media screen and (max-width: 1024px) {
   #main .mainContent #section .contentBox__img {
     width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -807,7 +809,9 @@
 @media screen and (max-width: 480px) {
   #main .mainContent #section .right__content img {
     width: 100%;
-    margin: 15px 0;
+    margin: -55px 0;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -1025,12 +1029,16 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #main .mainContent #stats {
-    width: 97%;
-  }
-  #main .mainContent #stats .stats__img {
+  #main .mainContent #stats .stats__img img {
     width: 100%;
     height: auto;
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #main .mainContent #stats {
+    width: 97%;
   }
 }
 
