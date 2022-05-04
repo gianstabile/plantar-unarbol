@@ -548,7 +548,7 @@
 }
 
 #main .mainContent .line--sumarse {
-  top: 950px;
+  top: 980px;
 }
 
 #main .mainContent #breadcrumb {
@@ -1760,13 +1760,14 @@
   width: 330px;
 }
 
-#section__form #form .formBox__items a {
+#section__form #form .formBox__items button {
   display: block;
   margin-left: auto;
+  border: none;
 }
 
 @media screen and (max-width: 1024px) {
-  #section__form #form .formBox__items a {
+  #section__form #form .formBox__items button {
     margin: 0 auto;
   }
 }

@@ -151,29 +151,29 @@
                                 <div class="col-xl-6 col-md-12">
                                     <div class="formBox">
                                         <h4 class="formBox__subtitle">Información personal:</h4>
-                                        <form action="">
+                                        <form action="https://formsubmit.co/gianjstabile@gmail.com" method="POST">
                                             <div class="formBox__items">
                                                 <div class="formBox__items__single">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre y apellido">
+                                                        <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre y apellido" required>
                                                         <label for="floatingInput">Nombre y apellido</label>
                                                     </div>
                                                 </div>
                                                 <div class="formBox__items__single">
                                                     <div class="form-floating">
-                                                        <input type="email" class="form-control" id="floatingInput" placeholder="nombreejemplo.com">
+                                                        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com" required>
                                                         <label for="floatingInput">Dirección de email</label>
                                                     </div>
                                                 </div>
                                                 <div class="formBox__items__single">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Celular">
+                                                        <input type="tel" name="celular" class="form-control" id="floatingPassword" placeholder="Celular" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="Introduzca un número de celular válido." maxlength="10">
                                                         <label for="floatingPassword">Celular <small>(sin el 0 ni el 15)</small></label>
                                                     </div>
                                                 </div>
                                                 <div class="formBox__items__single">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Ciudad">
+                                                        <input type="text" name="ciudad" class="form-control" id="floatingPassword" placeholder="Ciudad">
                                                         <label for="floatingPassword">Ciudad</label>
                                                     </div>
                                                 </div>    
@@ -184,7 +184,7 @@
                                 <div class="col-xl-6 col-md-12">
                                     <div class="formBox">
                                         <h4 class="formBox__subtitle">Datos de interés:</h4>
-                                        <form action="">
+                                        <form action="https://formsubmit.co/gianjstabile@gmail.com" method="POST">
                                             <div class="formBox__items">
                                                 <div class="formBox__items__single">
                                                     <div class="form-floating">
@@ -217,7 +217,7 @@
                                                         <label for="floatingTextarea2">Mensaje <small>(opcional)</small></label>
                                                       </div>
                                                 </div>
-                                                <a href="#"><div class="formBox__items__btn">Sumarse</div></a>
+                                                <button type="submit" class="formBox__items__btn">Sumarse</button>
                                             </div>
                                         </form>
                                     </div>
